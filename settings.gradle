@@ -1,0 +1,2 @@
+rootProject.name='Target Track'
+include ':app'

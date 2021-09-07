@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".OTP_validation">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_weight="1.0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+            android:layout_margin="60dp"
+            android:src="@drawable/otp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1.0"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="Enter OTP"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="We have sent you access code Via SMS for mobile verification."
+                android:paddingRight="40dp"
+                android:paddingLeft="40dp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/edt_reg_otp1"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="50dp"
+                android:textColor="@color/black"
+                android:padding="5dp"
+                android:password="true"
+                android:phoneNumber="true"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/rounded_editteext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <ProgressBar
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="50dp"
+                android:progressTint="@color/colorPrimary"
+                android:layout_gravity="start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1.0"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:layout_marginTop="@dimen/padding_10"
+                android:layout_gravity="center"
+                android:id="@+id/btn_reg_otp1"
+                android:textColor="@color/white"
+                android:text="Verify"
+                android:paddingRight="40dp"
+                android:paddingLeft="40dp"
+                android:background="@drawable/rounded_btn_gradient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

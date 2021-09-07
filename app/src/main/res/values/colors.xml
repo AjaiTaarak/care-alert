@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0A84FF</color>
+    <color name="colorPrimaryDark">#162447</color>
+    <color name="darkprimary">#1f4068</color>
+    <color name="darksecondary">#e43f5a</color>
+    <color name="colorp">#20A464</color>
+    <color name="mildGreen">#24b971</color>
+    <color name="colorAccent">#79fa5a</color>
+    <color name="textgray">#626262</color>
+    <color name="red">#ff3b30</color>
+    <color name="black">#000000</color>
+    <color name="mild_white">#f4f4f4</color>
+    <color name="white">#ffffff</color>
+    <color name="green">#228b22</color>
+    <color name="darkpeach">#69883a</color>
+    <color name="white_smoke">#f5f5f5</color>
+    <color name="orange">#ff9500</color>
+    <color name="mild_blue">#E0FFFF</color>
+    <color name="mildyellow">#FDF5E6</color>
+    <color name="dark_white">#E5E5EA</color>
+    <color name="grey_white">#EEEEEE</color>
+    <color name="background">#dddddd</color>
+    <color name="semi_trans">#4b000000</color>
+    <color name="iphone_silver">#A3AAAE</color>
+</resources>

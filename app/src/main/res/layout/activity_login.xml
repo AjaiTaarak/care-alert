@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <LinearLayout
+                android:layout_weight="1.0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <LinearLayout
+                android:layout_weight="1.0"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:gravity="bottom"
+                android:layout_height="match_parent">
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_weight="1.0"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:src="@drawable/login"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"/>
+                <TextView
+                    android:text="Login"
+                    android:textStyle="bold"
+
+                    android:textSize="22dp"
+                    android:textColor="@color/black"
+                    android:layout_gravity="start"
+                    android:layout_marginLeft="@dimen/fab_margin"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+                android:padding="20dp"
+                android:layout_weight="1.0"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:text="Phone:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:phoneNumber="true"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/rounded_editteext"
+                    android:padding="5dp"
+                    android:layout_width="match_parent"
+                    android:id="@+id/txt_login_phone"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/txt_login_mailinvalidd"
+                    android:textStyle="italic"
+                    android:text="Phone number invalid !"
+                    android:textColor="@color/red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <ProgressBar
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/padding_10"
+                    android:id="@+id/spn_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1.0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:textAllCaps="false"
+                    android:paddingRight="30dp"
+                    android:paddingLeft="30dp"
+                    android:elevation="@dimen/padding_10"
+                    android:layout_marginTop="20dp"
+
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:text="Login"
+                    android:background="@drawable/rounded_btn_gradient"
+                    android:id="@+id/btn_login_submit"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
